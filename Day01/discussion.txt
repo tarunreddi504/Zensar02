@@ -1,0 +1,223 @@
+Python
+------
+1. what is python 
+	a. object oriented programming language
+	b. Interpreted language
+	c. dynamic data types	
+
+2. why the name python
+	Guido van Russsum
+	comedy show - Monty python => python
+
+3. python history
+	1989 - dec -Rossum implemented python - Netherlands
+	python 2.0 in october 2000
+	python 3.0 was released in 2008
+	
+	3.11.x - latest version - www.python.org
+
+4. Features of python
+	a. open source  - source code is freely available
+	b. easy 		 -	writing code in python, the number of lines are less when compared to JAVA, 							Dotnet
+	c. Interpreted  -	
+	d. Object Oriented Programming - Inheritance, polymorphism, abstraction, encapsulation
+	e. portable - 
+	f. libraries - 
+	
+Desktop App - GUI - Python and TK (tool kit)
+Web App		 - flask, Django
+				MVC (Model View Controller) pattern
+				JSON (Javascript object notation) Data  REST API
+Mobile App	-	kivy
+ETL			- 	petl
+Testing		-	pytest, selenium
+Datascience - data analytics, ML, AI
+Automation	-	network - Paramiko
+webscrapping - beatifulsoup, scrappy
+
+
+4. applications of python
+5. Architecture and working of python
+
+production
+----------
+def fun(name, age, desig):			Constructor
+	print(name)
+	print(age)
+	print(desig)
+
+
+class method
+name = fn + ln
+
+Versions of python
+-------------------
+2.x and 3.x
+-----------
+2.7 and 3.7
+
+flavours of python
+------------------
+1. cpython		-	currently using
+
+2. jython		-	python to java
+
+3. ironpython	-	python -> dotnet code / lib
+
+
+Editors - 
+
+IDLE - Integrated Development Environment
+
+Free Editors
+------------
+1. Notepad++
+
+2. sublime text
+3. pycharm	(CE, opensource)	
+4. VS code (CE)
+5. jupyter notebook
+6. colab
+7. spyder 
+
+paid
+8. Komodo	-	perl, ruby, python, nodejs, tcl / tk
+
+def fun():
+	print("hello")
+	
+python 3.x
+----------
+1. python SDK  (min libraries)
+2. IDLE
+3. Shell - interactive environment 
+
+DOS - python will work as a subsystem
+
+python is case sesitive.
+
+in python there are 2 operators that are overloaded
+1. + 		=>	addition and concatenation
+2. *		=> 	multiplication and print a strin n number of times
+
+Numbers in python
+-----------------
+
+------------------------------------------------------------------------------------------------
+Module   - imp
+function - reload
+
+from imp import reload  
+------------------------------
+
+python coding rules
+-------------------
+
+#! c:\python39			- #! - Shebang - used to get the python executable path
+
+
+Comments
+--------
+#	- comment a single line
+
+strings in python
+-----------------
+1. single line - " " or ' '
+
+print(f"this is a sample code :{fun('hello')}"
+
+2. multiple line - 
+	"""
+		line-1
+		line-2
+		line-3
+	"""
+	'''
+		line-1
+		line-2
+		line-3
+	'''
+
+strings are used in docstring -> it display information about the use of function or a class
+
+Indentation
+-----------
+python code will not rely on paranthesis or brackets for code blocks
+
+def fun(x):
+	for i in range(1, x+1):
+		print("for loop code")
+
+		if x % 2 == 0:
+			print("if cond code")
+			print(x)
+
+	print("function fun code")
+
+print("main module code")
+
+python files
+------------
+python files will have an extension .py
+
+python modules also will have extension .py
+
+hence any python file can be considered as a module
+
+
+primary data types
+------------------
+1. numbers
+	a. integers
+	b. float
+	c. complex
+2. boolean
+3. strings
+
+
+Loops and Control Structures
+----------------------------
+
+control structures
+------------------
+1. if condition
+2. select case - does not support 
+
+
+Loops
+-----
+1. for loop
+	a. includes start value, increment value and the stop value
+	b. similar to foreach loop in other tech - works on a range operator
+	c. range is used to generate number - we have use this range operator to iterate
+
+2. while
+
+
+Problem
+-------
+1. print the pattern
+
+1 2 3 4 5
+ 1 2 3 4
+  1 2 3
+   1 2 
+    1
+   2 1
+  3 2 1
+ 4 3 2 1
+5 4 3 2 1
+
+2. print all prime numbers between 150 and 50 and also print the count of it.
+
+
+strings
+-------
+1. strings are immutable
+
+TypeError: 'str' object does not support item assignment
+
+
+
+
+
