@@ -41,6 +41,13 @@ what is the next number which satisfies this condition
 
 4. write a code to generate pascals triangle
 
+            1
+           1 1
+          1 2 1
+         1 3 3 1
+        1 4 6 4 1
+
+
 5. (greedy ? )
 	farmer -> 3 daughters -> each daughter had a son
         farmer had  mangoes in a room
