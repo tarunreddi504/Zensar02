@@ -1,0 +1,73 @@
+Dictionaries
+------------
+1. associative arrays
+2. keys in a dictionary is always unique
+3. dictionaries are mutable
+4. dictionaries are enclosed in {k1:v1, k2:v2, k3:v3....}
+
+
+----------------------------------------------------------
+first
+-----
+d1 = d2
+d1 = d2.copy()
+
+
+second
+------
+d1 = d2.copy()			# drawback
+d1 = deepcopy(d2)
+
+
+Tuples
+------
+1. immutable list 
+2. subscirtable
+3. ordered collection
+4. enclosed in ( )
+
+sets
+----
+1. collection of unique values
+2. unordered collection
+3. not subscriptable (cannot be indexed)
+4. enclosed in {}
+
+
+d1 = {1: 2, 3: 4}
+d2 = {4: 5, 6: 7}
+d3 = {8: 9, 10 :11}
+
+d4 = {1:2 3:4, 4:5, 6:7, 8:9, 10, 11}
+
+
+Functions
+---------
+def - define a function
+
+def fun():
+	print("hello")
+
+
+return is the last line of execution inside a function
+
+
+1. write a code to find the factorial of a number using recursive calls
+
+
+def fac(n):
+    if n==1:
+        return 1
+    else:
+        return  n*fac(n-1)
+n=int(input())
+print(fac(n))
+
+
+
+
+
+
+
+
+
