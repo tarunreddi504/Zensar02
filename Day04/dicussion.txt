@@ -1,0 +1,74 @@
+Scope of a variable
+-------------------
+1. global
+2. local
+3. non local
+
+global
+------
+1. declared outside the function
+2. accesibility - it should be allowed to print and modify the variable
+
+lambdas
+-------
+anonymous functions => function without a name -> single expression
+
+result_of_exp = lambda(var1, var2, var3.....: expression)
+
+def squares(n):
+	return n ** 2
+
+map(function_name, args)
+
+map(lambda x: x ** 2, l)
+
+map(squares, l)
+
+Comprehension
+-------------
+using lambda syntax we can iterate through a collection (list, dictionary) => comprehension
+
+
+list comprehension
+------------------
+
+Dict comprehension
+------------------
+
+iterators
+---------
+
+Closures
+--------
+These three conditions must be met:
+
+We must have a nested function.
+This nested function must refer to a variable nonlocal to it(a variable in the scope enclosing it).
+The enclosing scope must return this function.
+
+Eg:
+
+def outerFun():
+    x = "Sachin"
+
+    def innerFun():
+        print(f"Hello {x}")
+
+    return innerFun
+
+
+@box
+def fun():
+	print("Hello Virat")
+
+
+fun()	
+
+
+-----------------
+|				  |
+|				  |
+-----------------
+
+
+
