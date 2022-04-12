@@ -1,0 +1,139 @@
+*****************************
+=============================
+
+fun1 called....
+
+#############################
+-----------------------------
+
+
+
+def doubleMesh(fnc):
+    def helper(*args):
+        print("=" * 40)
+        fnc(*args)					# calls fun2				- 5
+        print("#" * 40)
+    return helper
+
+def starSingle(fnc):				# takes helper function of doublemesh as arg 	- 2
+    def helper(*args):
+        print("*" * 40)
+        fnc(*args)					# calls the helper function of double mesh 	- 4
+        print("-" * 40)
+    return helper
+
+
+@starSingle
+@doubleMesh							# calls the doublemesh and passes fun2 as arg		- 1
+def fun2(x):
+    print(f"fun2 called....:{x}")
+
+fun2(10)							# call the helper function of starsingle			- 3
+
+
+
+-------------------------------------------------------------------------------------------------
+
+
+def doubleMesh(fnc):
+    def helper(*args):
+        print("=" * 40)
+        fnc(*args)
+        print("#" * 40)
+    return helper
+
+def starSingle(fnc):
+    def helper(*args):
+        print("*" * 40)
+        fnc(*args)
+        print("-" * 40)
+    return helper
+
+
+
+def fun2(x):
+    print(f"fun2 called....:{x}")
+
+
+funlogger = doubleMesh(fun2)
+funlog = starSingle(funlogger)
+funlog(10)
+
+-------------------------------------------------------------------------------------------
+
+OOPS
+----
+
+Object Oriented Programming
+---------------------------
+1. abstraction			-
+2. polymorphism		-
+3. inheritance			-
+4. encapsulation		-
+
+class Manager: 
+
+	def doJob(self):
+		print("managers job")
+
+class Cashier:
+
+	def doJob(self):
+		print("cashiers job")
+
+mike = Manager()
+david = Cashier()
+
+
+def doJob(obj):
+	obj.doJob
+
+doJob(mike)		=>	Manager's job
+dojob(david)	=>  Cashier's job	
+
+
+old rule
+	a. pay cash and get ticket
+	b. swipe card and get ticket
+	c. book ticket online
+
+new rule(old rule (a, b, c))
+	d. give disc to friends
+
+class - blue print of your business
+------------------------------------
+
+creating an object of a class -> it will call the constructor (method)
+
+constructors in python -> __init__()
+
+
+Arithmatic Operators
+---------------------
+1. add
+2. subtract
+3. multiply
+4. divide
+5. floor division
+
+
+
+1. setter
+2. getter
+3. deleter
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
