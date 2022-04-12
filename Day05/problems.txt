@@ -1,0 +1,46 @@
+Assignment 1
+
+@nozero
+def div(x,y):
+	return x/y
+
+@nozero
+def mul(x,y):
+	return x*y
+
+@nozero
+def add(x,y):
+	return x+y
+@nozero
+def sub(x,y):
+	return x-y
+
+
+Assignment 2
+
+@drawborder('*','#',40)
+def greet(msg):
+    print("greet",msg)
+
+@drawborder('=','_',30)
+def RSVP(msg): 
+    print("RSVP",msg)
+
+
+
+Assignment 3
+@logBeforeAfter
+def fun(x, y):
+    print("fun", x, y)
+
+@logBeforeAfter
+def fun1(*args):
+    print("fun1", args)
+
+@logBeforeAfter
+def fun2(**kwargs):
+    print("fun2", kwargs)
+
+@logBeforeAfter
+def fun3(*args, **kwargs):
+    print("fun3", args, kwargs)
