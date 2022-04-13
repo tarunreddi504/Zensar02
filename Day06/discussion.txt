@@ -41,6 +41,90 @@ package - folder that has the modules
 if .pyc file date and time is older than .py file the recreate the .pyc file
 
 
+f00be23499ebb85120117556f750935d
+
+
+https://api.openweathermap.org/data/2.5/weather?q=London&appid=f00be23499ebb85120117556f750935d
+
+file handling Python
+--------------------
+Text files - ascii format (no drivers needed)
+----------
+
+filehandle = open(filename + path, mode)
+
+mode =>  READ		-> r		- default mode
+		 WRITE		-> w		- a. file present - delete the contents of the file and writes newly 
+								  b. file not present - create a file and writes the contents into it
+
+		 APPEND		-> a		- a. file present - without disturbing the old contents adds the new 														  content
+								  b. file not present - create a file and writes the contents into it
+
+
+Read the contents of the file randomly
+
+1.seek		-	move the file handle from one location to another 
+2.tell		- 	return the position of the file handle
+
+FL.seek(offset, whence)
+
+offset - no of bytes to be skipped
+
+whence - position to start 
+		
+		0 - BOF
+		1 - Current Position
+		2 - EOF
+
+position = seek(100, 0) 	=> count 100 bytes from BOF   - 100th byte
+position = seek(50, 1)	  	=> 50 from current position   - 150th byte
+
+1. FL.seek(200, 0)
+
+2. FL.seek(-50, 1)
+
+3. FL.seek(300, 1)
+
+4. FL.seek(500, 2)
+
+5. FL.seek(-300, 2)
+
+6. FL.seek(-50, 0)
+
+
+
+Problem
+--------
+1. Write a code to accept data for a file until the choice of the user is 'NO'
+
+2. open a directory (day06, use os module) and generate a report to print the following
+
+	filename 		-	file size (FL.seek(0,2)
+
+ 
+CSV files
+Json files
+XML files
+Excel file
+
+Regular Expression
+
+File handling
+
+Logging module
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
