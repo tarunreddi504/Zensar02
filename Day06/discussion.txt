@@ -1,0 +1,51 @@
+OOPS
+----
+Basics of OOPS
+
+Design patterns
+---------------
+
+
+Date and Time
+-------------
+
+packages and modules
+--------------------
+packages - folder or a directory 
+
+module - any python file => same as libraries
+
+.py file 		-> human readable
+.pyc file		-> bytecode (junk characters)
+
+import mymodule as m
+--------------------
+1. search for the module in specific locations 
+		location - path of environment variable holds
+
+2. covert the python file into byte code	
+		.py => .pyc		-> .pyc files will be stored in a folder __pycache__
+
+
+
+package - folder that has the modules
+			__init__.py
+
+1. import mymodule
+2. import mymodule as m
+3. import mypackage.mymodule 
+4. from mymodule import function, class
+5. from mypackage import *
+6. from mypackage import module
+
+if .pyc file date and time is older than .py file the recreate the .pyc file
+
+
+
+
+
+
+
+
+
+
