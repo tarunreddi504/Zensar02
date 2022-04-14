@@ -1,0 +1,11 @@
+O01DateandTime.py => 1566
+O02Consume01.py => 164
+O03Consume02.py => 183
+O04Consume03.py => 197
+O05Consume04.py => 149
+O06Consume05.py => 76
+O07Consume06.py => 105
+O08FileRead.py => 511
+O09FileWrite.py => 251
+O10FileRandom.py => 229
+O11FileAppend.py => 121
