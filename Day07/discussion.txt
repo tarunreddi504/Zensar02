@@ -1,0 +1,152 @@
+csv file =>  csv library, open it like a text file and manipulate it 
+---------
+
+
+g = m, f, f, m,.....
+
+
+gender = {'m': 2, 'f': 2}
+
+
+   if g in gender:
+        gender[g] += 1
+    else:
+        gender[g] = 1
+
+
+Excel File - .xlsx
+------------------
+
+file - workbook
+
+pages - worksheet
+
+worksheet is having rows and cols
+rows => numbered 1 - 1048576
+cols => named A - Z, AA - AZ, BA - BZ....XFD (16384)
+
+data will be added in a cell 
+cell = intersection of a row and a column
+
+Col A, Row 10 => A10
+
+openpyxl
+
+
+JSON - Java script Object Notation
+REST API - Json
+
+
+Regular Expressions
+-------------------
+st = "hello world"
+
+* ?
+
+* - replace a series of characters
+? - replace a single chracter
+
+
+dir *.txt		* - replaces the file names
+dir a*.*		* - replaces the file name and the extension
+
+dir ?a*.txt		? -  replace a single character
+dir *e?.txt		
+
+
+import re		
+---------
+
+^			-	to match the begning of the string
+$			- 	to match the end of the string
+
+.			-	single character 
+
+*			-	zero or more occurances
+?			-  	zero or single occurance
++			-	one or more occurance
+{n}			-   exactly n times
+{n,}		-   n or more times
+{n, m}		- 	min n and max m times
+()			- 	grouping
+[]			-	character class
+|			- 	alternation
+\			- 	supress the meaning of a regular expression
+
+
+sample.py		=> file names that end with extension '\.py'
+
+
+re.match(r'regex', string, flags)
+
+-------------------------------------------------------------------------------
+
+\w			-	Word					- alpha numeric characters
+\W			- 	non word
+
+\s			-	space
+\S			- 	non space
+
+\d			-	digit
+\D			-   non digit
+
+\b			-   word boundary
+\B			-   non word boundary
+
+\A			- 	Begning of the string
+\Z			-   End of the string
+
+
+
+
+
+
+
+Problem
+--------
+1. lcno = "LCNO-KAR-05-2004-0001
+
+validations
+
+LCNO - remains the same
+
+KAR  - KAR, KER, TND, APN, TEL, MAH, GOA
+
+RTO  -	01 - 73  (no 00)
+
+year - 2000+
+
+0001 - 0001 - 9999 (no 0000)
+
+
+ln = "LCNO-KAR-05"
+
+res = re.search(r'LCNO-()-()', ln)
+
+
+if res:
+	print(res.group(0))
+	print("Match found")
+else:
+	print("Match not found")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
